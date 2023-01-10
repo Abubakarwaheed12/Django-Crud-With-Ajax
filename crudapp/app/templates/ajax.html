@@ -5,7 +5,6 @@ $('#savedata').click(function(){
     output="";
     
     let sid=$('#stuid').val();
-
     let nm=$('#nameid').val();
     let em=$('#emailid').val();
     let csrf=$('input[name=csrfmiddlewaretoken]').val();
@@ -31,7 +30,6 @@ $('#savedata').click(function(){
                 if(data.status=='save'){
                     console.log('form is submitted succefully')
                     $('form')[0].reset();
-                   
                     for(i=0; i<x.length; i++){
                         output +="<tr><td>" + x[i].id + "</td><td>" + x[i].name + "</td><td>" +
                             x[i].email + "</td><td> <input type='button' class='btn btn-warning btn-sm btn_edit' value='edit' data-sid=" + x[i].id +

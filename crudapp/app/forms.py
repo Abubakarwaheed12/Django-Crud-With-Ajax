@@ -8,6 +8,5 @@ class UserRegistration(forms.ModelForm):
 
         widgets={
             'name':forms.TextInput(attrs={'class':'form-control' , 'id':'nameid'}),
-            # 'lname':forms.TextInput(attrs={'class':'form-control' , 'id':'lnameid'}),
-            'email':forms.EmailInput(attrs={'class':'form-control' , 'id':'emailid'})
+            'email':forms.EmailInput(attrs={'class':'form-control' , 'id':'emailid'}),
         }
