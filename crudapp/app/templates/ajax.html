@@ -1,5 +1,5 @@
 <script>
-    {% comment %} Insert DATA {% endcomment %}
+    //  Insert DATA  
 $('#savedata').click(function(){
     console.log('button clicked');
     output="";
@@ -52,7 +52,10 @@ $('#savedata').click(function(){
     }
 })
 
-{% comment %} Delete DATA {% endcomment %}
+
+//  DELETE DATA  
+
+
 $('tbody').on('click', '.btn_del' , function(){
     console.log('button delete clicked');
     let id=$(this).attr('data-sid');
@@ -76,7 +79,9 @@ $('tbody').on('click', '.btn_del' , function(){
 })
 })
 
-{% comment %} EDIT / UPDATE DATA {% endcomment %}
+
+//  Edit  DATA  
+
 $('tbody').on('click', '.btn_edit' , function(){
     console.log('button edit clicked');
     let id=$(this).attr('data-sid');
