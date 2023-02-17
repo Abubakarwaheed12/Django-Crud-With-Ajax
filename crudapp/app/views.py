@@ -19,6 +19,7 @@ def save_data(request):
             sid=request.POST.get('stuid')
             nm=request.POST['name']
             email=request.POST['email']
+            print(nm)
             if(sid == ""):    
                 usr=user.objects.create(email=email, name=nm)
             else:
